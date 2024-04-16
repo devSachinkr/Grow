@@ -29,7 +29,7 @@ export default authMiddleware({
     if (
       url.pathname === "/" ||
       (url.pathname === "/site" &&
-        url.hostname === process.env.NEXT_PUBLIC_DOMAIN)
+        url.host === process.env.NEXT_PUBLIC_DOMAIN)
     ) {
       return NextResponse.redirect(new URL("/site", req.url));
     }
