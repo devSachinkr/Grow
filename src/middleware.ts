@@ -29,7 +29,6 @@ export default authMiddleware({
     if (
       url.pathname === "/")
     {
-      console.log("hi")
       return NextResponse.redirect(new URL("/site", req.url));
     }
     if (
