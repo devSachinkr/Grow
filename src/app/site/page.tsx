@@ -13,8 +13,8 @@ import clsx from "clsx";
 import { Star } from "lucide-react";
 import Link from "next/link";
 import GradientText from "@/components/golbal/GradientText";
+// render site
 export default function Home() {
-  console.log("fisrt")
   return (
     <main>
       <section className=" h-screen w-full pt-36 relative flex items-center justify-center flex-col ">
