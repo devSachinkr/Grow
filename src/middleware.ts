@@ -26,11 +26,10 @@ export default authMiddleware({
     if (url.pathname === "/sign-in" || url.pathname === "/sign-up") {
       return NextResponse.redirect(new URL("/agency/sign-in", req.url));
     }
+    // redirect to home page
     if (
-      url.pathname === "/" ||
-      (url.pathname === "/site" &&
-        url.host === process.env.NEXT_PUBLIC_DOMAIN)
-    ) {
+      url.pathname === "/")
+    {
       return NextResponse.redirect(new URL("/site", req.url));
     }
     if (

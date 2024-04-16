@@ -13,7 +13,7 @@ import clsx from "clsx";
 import { Star } from "lucide-react";
 import Link from "next/link";
 import GradientText from "@/components/golbal/GradientText";
-// render site
+// render
 export default function Home() {
   return (
     <main>
