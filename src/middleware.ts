@@ -26,6 +26,7 @@ export default authMiddleware({
     if (url.pathname === "/sign-in" || url.pathname === "/sign-up") {
       return NextResponse.redirect(new URL("/agency/sign-in", req.url));
     }
+    // redirect to home page
     if (
       url.pathname === "/")
     {
